@@ -1,0 +1,5 @@
+va=float(input("Ingrese la velocidad del cuerppo a: "))
+vb=float(input("Ingrese la velocidad del cuerppo b: "))
+distancia=float(input("Ingrese la distancia entre cuerpos: "))
+t=distancia/(va+vb)
+print("El tiempo en que se cruzan: ",t)
