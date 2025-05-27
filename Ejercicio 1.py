@@ -1,4 +1,2 @@
-velocidad = int(input("Ingrese la velocidad: "))
-tiempo = int(input("Ingrese el Tiempo: "))
-print()
-print("La distancia es:",(velocidad*tiempo))
+for i in range(5):
+    nota=int(input(f"Nota del alumno {i}:"))
