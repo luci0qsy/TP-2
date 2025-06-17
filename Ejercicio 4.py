@@ -1,6 +1,13 @@
-ganados = int(input("Introduce el número de partidos ganados: "))
-empatados = int(input("Introduce el número de partidos empatados: "))
-perdidos = int(input("Introduce el número de partidos perdidos: "))
-puntaje = (ganados * 3) + (empatados * 1) + (perdidos * 0)
-print()
-print("El puntaje total del Club ABC es: ",puntaje)
+import random
+secreto = random.randint(1, 10)
+intentos = 3
+while intentos > 0:
+    intento = int(input("Adiviná el número (1-10): "))
+    if intento == secreto:
+        print("¡Correcto!")
+        break
+    else:
+        print("Incorrecto.")
+    intentos -= 1
+if intentos == 0:
+    print(f"Perdiste. El número era {secreto}.")

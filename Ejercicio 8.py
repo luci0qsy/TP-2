@@ -1,5 +1,11 @@
-base=float(input("Base: "))
-alto=float(input("Alto: "))
-sup = base*alto
-per = 2*(base+alto)
-print("Superficie: ",sup," Perimetro: ",per)
+par = False
+
+for i in range(5):
+    num = int(input("Ingresá un número: "))
+    if num % 2 == 0:
+        par = True
+
+if par:
+    print("Al menos uno es par.")
+else:
+    print("No hay números pares.")

@@ -1,6 +1,10 @@
-correctas=int(input("Ingrese la cantidad de respuestas correctas: "))
-incorrectas=int(input("Ingrese la cantidad de respuestas incorrectas: "))
-blanco=int(input("Ingrese la cantidad de respuestas en blanco: "))
-print()
-puntaje=(correctas*3)+(incorrectas*-1)+(blanco*0)
-print("El puntaje final es: ",puntaje)
+total = 0
+while True:
+    precio = float(input("Ingresá el precio del producto (0 para terminar): "))
+    if precio == 0:
+        break
+    total += precio
+if total > 10000:
+    total *= 0.9
+    print("Se aplicó un 10% de descuento.")
+print(f"Total a pagar: ${total:.2f}")
