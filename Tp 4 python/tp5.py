@@ -10,6 +10,6 @@ else:
             break
 
 if primo:
-    print("✅ Es un número primo.")
+    print("Es un número primo.")
 else:
-    print("❌ No es primo.")
+    print("No es primo.")

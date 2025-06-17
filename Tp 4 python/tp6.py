@@ -4,7 +4,7 @@ intentos = 3
 while intentos > 0:
     clave = input("Ingresá la contraseña: ")
     if clave == CLAVE_CORRECTA:
-        print("✅ Acceso concedido.")
+        print("Acceso concedido.")
         break
     else:
         intentos -= 1
